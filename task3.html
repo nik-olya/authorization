@@ -38,6 +38,14 @@
                 pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*]).{6,}">
             </div>
           </div>
+          <div class="form-row">
+            <div class="form-label">
+              <label>Время</label>
+            </div>
+            <div class="form-field">
+              <p id="clock"></p>
+            </div>
+          </div>
 
           <div class="form-buttons">
             <input class="submit" type="submit" value="Вход" title="Вход">
@@ -48,5 +56,8 @@
         </div>
       </div>
     </div>
+    <script type="text/javascript">
+        document.getElementById('clock').innerHTML = new Date();
+    </script>
   </body>
 </html>
