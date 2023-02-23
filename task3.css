@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+html {
+  font-size: 10pt;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body,
+#wrap {
+  background-color: #f1f5cf;
+  height: 100%;
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+}
+
+#content_box {
+  margin: 10em auto;
+  width: 50em;
+  background-color: white;
+  border: 5px #5d670d solid;
+  min-height: 10em;
+}
+
+#content_box h1 {
+  display: block;
+  /*width: 100%;*/
+  /*background-color: #EDF5A5;*/
+  background-image: url(/img/index/header_bg.jpg);
+  color: #edf5a5;
+  padding: 0.5em 1em;
+  font-size: 3em;
+}
+
+#content_box form {
+  margin: 1em;
+}
+
+#content_box .text {
+  text-align: center;
+}
+
+#content_box .footer {
+  margin-top: 2em;
+  background-color: #edf5a5;
+  height: 2em;
+  line-height: 2em;
+  padding: 0 1em;
+}
+
+#content_box .footer a {
+  color: #5d670d;
+}
+
+#content_box .footer a.copyright {
+  float: right;
+}
+
+#content_box .footer .menu {
+  float: left;
+}
+
+form {
+  font-size: 1.25em;
+}
+
+.form-row {
+  clear: both;
+  padding: 0.5em 0 0.75em;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.form-label {
+  float: left;
+  width: 12em;
+  text-align: right;
+  padding: 0.25em 0 0.25em 0;
+}
+
+.form-label label {
+  margin-right: 1em;
+  font-weight: bold;
+  font-size: 1.25em;
+  color: #999999;
+}
+
+.form-field {
+  width: 15em;
+  float: left;
+}
+
+.form-row ul.error_list {
+  font-weight: bold;
+  list-style-type: none;
+  margin: 0 1.5em 0 12em;
+  clear: both;
+}
+
+.form-row ul.error_list li {
+  color: red;
+}
+
+.form-row input,
+textarea,
+select {
+  font-size: 1.25em;
+}
+
+.form-buttons {
+  margin: 0.5em 1em;
+  text-align: center;
+}
+
+.form-buttons input.submit {
+  font-size: 1.25em;
+  padding: 0.1em 0.5em;
+}
+
+input[type="checkbox"],
+input[type="radio"],
+input.checkbox,
+input.radio {
+  position: relative;
+  top: 0.25em;
+}
+
+.error_contener ul.error_list {
+  list-style-type: none;
+  display: block;
+  margin: 0.5em 2em;
+  padding: 0.5em 2em;
+  border: 1px #5a0c2b solid;
+  background-color: #b6547c;
+  color: #f1f5cf;
+}
