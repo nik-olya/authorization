@@ -13,7 +13,7 @@
   <body>
     <div id="wrap">
       <div id="content_box">
-        <form action="task3.html" method="GET">
+        <form action="task3.html" method="GET" name="myForm" onsubmit="return validate()">
           <div class="error_contener"></div>
 
           <div class="form-row">
@@ -38,6 +38,19 @@
                 pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*]).{6,}">
             </div>
           </div>
+
+          <div class="form-row">
+            <div class="form-label">
+              <label for="user_telephone">Телефон</label>
+            </div>
+            <div class="form-field">
+              <input
+                type="text"
+                name="user[telephone]"
+                id="user_telephone">
+            </div>
+          </div>
+
           <div class="form-row">
             <div class="form-label">
               <label>Время</label>
@@ -58,6 +71,24 @@
     </div>
     <script type="text/javascript">
         document.getElementById('clock').innerHTML = new Date();
+    </script>
+     <script type="text/javascript">
+      const phoneRegExp = /^([+]7|8)[(]?\d{3}[)]?\d{7}$/;
+
+      function validate() {
+        var telephone = document.forms["myForm"]["user[telephone]"];
+        if (telephone.value == "") {
+          alert("Укажите ваш телефон");
+          return false;
+        }
+
+        if (!phoneRegExp.test(telephone.value)) {
+          alert("Укажите телефон в формате +7хххххххххх");
+          return false;
+        }
+
+        return true;
+      }
     </script>
   </body>
 </html>
